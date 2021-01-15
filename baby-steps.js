@@ -1,20 +1,6 @@
+let result = 0
 
-
-/* function somme(a, b, c){
-    return a+b+c;
+for (let i = 2; i < process.argv.length; i++) {
+  result += Number(process.argv[i])
 }
-
-let first = +process.argv[2];
-let second = +process.argv[3];
-let third = +process.argv[4]; */
-
-
-let somme = 0;
-
-for (i=2; i<process.argv.length; i++){
-    somme += Number(process.argv[i]);
-}
-
-console.log(somme);
-
-
+console.log(result)
